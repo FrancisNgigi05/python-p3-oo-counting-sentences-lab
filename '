@@ -38,6 +38,6 @@ class MyString:
     def count_sentences(self):
         sentences = re.split(r'[!?.]+', self.__value)
 
-        sentences = [s for s in sentences if s]
+        sentences = [s for s in self.__value if s]
 
         return len(sentences)
